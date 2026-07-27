@@ -1,7 +1,26 @@
 aid: hopshop-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hopshop-inc.png
 name: HopShop Inc.
-description: HopShop Inc. is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HopShop Inc. is a consumer AI fashion-discovery and creator-monetization platform, often described
+  as "Shazam for Fashion." Shoppers upload or screenshot an outfit and HopShop's visual-search AI finds
+  the exact item plus similar matches across 600+ brand partners, including Bloomingdale's, Nordstrom,
+  Levi's, and Tommy Hilfiger. Creators and influencers build personalized shops, link the outfits they
+  feature on Instagram to shoppable products, grow their communities, and earn affiliate commissions.
+  The company is backed by 500 Global. As surfaced to the API Evangelist network, HopShop operates as a
+  consumer-facing mobile and web application and publishes no public developer API, SDKs, developer
+  portal, or OpenAPI surface at this time; this profile captures its identity and probed domain security.
 url: https://raw.githubusercontent.com/api-evangelist/hopshop-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fashion
+- Retail
+- E-Commerce
+- Visual Search
+- Artificial Intelligence
+- Creator Economy
+- Shopping
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hopshop-inc-domain-security.yml
 - type: Website
   url: https://hopshop.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
